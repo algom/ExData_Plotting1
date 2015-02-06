@@ -1,5 +1,7 @@
 ## Scripts to generate 4 different plots
 
+<i> <b>Note:</b> The graphs have a <b>transparent background</b> as that's how the originals are, if this is not needed, the </i> <b>bg = "transparent"</b> <i>attribute should be removed from</i> <code> png(file = "plotX.png", bg = "transparent") </code>
+
 In this assignment four R scripts were created, for the purpose to generate some plots, using data from the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine Learning Repository</a>, specifically the "Individual household
 electric power consumption Data Set". This dataset can be accessed through the coursera Exploratory data analysis course webpage. <br>
 Below is a description of the data and the tasks to be performed, taken from the original README file of the GitHub repository:
