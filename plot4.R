@@ -21,7 +21,7 @@ hh2$Time <- as.character(hh2$Time)
 hh2$DateTime <- as.POSIXct(paste(hh2$Date, hh2$Time), format="%d/%m/%Y %H:%M:%S")
 
 #Fourth plot, makes four plots in one
-png(file = "plot4.png")
+png(file = "plot4.png", bg = "transparent")
 #Uses par to establish four plots, and arrange margins
 par(mfcol = c(2,2), mar=c(5,4,2,2))
 #First plot
