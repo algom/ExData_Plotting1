@@ -27,6 +27,16 @@ plot(hh2$DateTime, hh2$Sub_metering_1, ylab="Energy sub metering", xlab="", type
 lines(hh2$DateTime, hh2$Sub_metering_1)
 lines(hh2$DateTime, hh2$Sub_metering_2, col="red")
 lines(hh2$DateTime, hh2$Sub_metering_3, col="blue")
-#Driw legend
+#Draw legend
 legend("topright", lty=1, col=c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 dev.off()
+
+#Print on screen
+plot(hh2$DateTime, hh2$Sub_metering_1, ylab="Energy sub metering", xlab="", type="n")
+#Draw Lines with diferent colrs
+lines(hh2$DateTime, hh2$Sub_metering_1)
+lines(hh2$DateTime, hh2$Sub_metering_2, col="red")
+lines(hh2$DateTime, hh2$Sub_metering_3, col="blue")
+#Draw legend
+legend("topright", lty=1, col=c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+

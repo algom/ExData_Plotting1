@@ -24,3 +24,9 @@ hh2$DateTime <- as.POSIXct(paste(hh2$Date, hh2$Time), format="%d/%m/%Y %H:%M:%S"
 png(file = "plot1.png", bg = "transparent")
 hist(hh2$Global_active_power, col="red", ylim=c(0,1300), xlab="Global Active Power (kilowatts)", main="Global Active Power", bg="transparent")
 dev.off()
+
+#Print plot on screen
+hist(hh2$Global_active_power, col="red", ylim=c(0,1300), xlab="Global Active Power (kilowatts)", main="Global Active Power", bg="transparent")
+
+
+

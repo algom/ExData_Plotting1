@@ -47,3 +47,27 @@ lines(hh2$DateTime, hh2$Global_reactive_power)
 
 #Closes device
 dev.off()
+
+
+#Print on screen
+
+#Uses par to establish four plots, and arrange margins
+par(mfcol = c(2,2), mar=c(5,4,2,2))
+#First plot
+plot(hh2$DateTime, hh2$Global_active_power, type="n", ylab="Global Active Power", xlab="")
+lines(hh2$DateTime, hh2$Global_active_power)
+#Second plot
+plot(hh2$DateTime, hh2$Sub_metering_1, ylab="Energy sub metering", xlab="", type="n")
+#Draw Lines with diferent colors
+lines(hh2$DateTime, hh2$Sub_metering_1)
+lines(hh2$DateTime, hh2$Sub_metering_2, col="red")
+lines(hh2$DateTime, hh2$Sub_metering_3, col="blue")
+#Draw legend without box
+legend("topright", lty=1, col=c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
+#Third plot
+plot(hh2$DateTime, hh2$Voltage, ylab="Voltage", xlab="datetime", type="n")
+lines(hh2$DateTime, hh2$Voltage)
+#Fourth plot
+plot(hh2$DateTime, hh2$Global_reactive_power, ylab="Global_reactive_power", xlab="datetime", type="n")
+lines(hh2$DateTime, hh2$Global_reactive_power)
+

@@ -27,3 +27,10 @@ plot(hh2$DateTime, hh2$Global_active_power, type="n", ylab="Global Active Power 
 #Draw graph
 lines(hh2$DateTime, hh2$Global_active_power)
 dev.off()
+
+#Print on screen
+plot(hh2$DateTime, hh2$Global_active_power, type="n", ylab="Global Active Power (kilowatts)", xlab="")
+#Draw graph
+lines(hh2$DateTime, hh2$Global_active_power)
+
+
