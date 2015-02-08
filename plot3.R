@@ -20,8 +20,8 @@ hh2$Time <- as.character(hh2$Time)
 
 hh2$DateTime <- as.POSIXct(paste(hh2$Date, hh2$Time), format="%d/%m/%Y %H:%M:%S")
 
-#Sub metering
-png(file = "plot3.png", bg = "transparent")
+#Sub metering, to add transparency add bg = "transparent" in png(file="plot3.png", bg = "transparent")
+png(file = "plot3.png")
 plot(hh2$DateTime, hh2$Sub_metering_1, ylab="Energy sub metering", xlab="", type="n")
 #Draw Lines with diferent colrs
 lines(hh2$DateTime, hh2$Sub_metering_1)

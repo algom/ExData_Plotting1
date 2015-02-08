@@ -20,8 +20,8 @@ hh2$Time <- as.character(hh2$Time)
 
 hh2$DateTime <- as.POSIXct(paste(hh2$Date, hh2$Time), format="%d/%m/%Y %H:%M:%S")
 
-#Do scatter plot with lines of Global active power vs date time
-png(file = "plot2.png", bg = "transparent")
+#Do scatter plot with lines of Global active power vs date time, to make it transparent add bg = "transparent" to png(file,..)
+png(file = "plot2.png")
 #Generate plot, without writing adding labels
 plot(hh2$DateTime, hh2$Global_active_power, type="n", ylab="Global Active Power (kilowatts)", xlab="")
 #Draw graph
