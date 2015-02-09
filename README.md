@@ -45,26 +45,3 @@ pixels and height of 480 pixels, as instructed and named `plot1.png`, `plot2.png
 
 Lastly, the scripts as well as the graphs have been pushed to the this forked repository.
 
-The four plots that where originally asked to replicate are shown below:
-
-
-### Plot 1 - To do
-
-
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
-
-### Plot 2 -  To do
-
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
-
-
-### Plot 3 - To do
-
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
-
-
-### Plot 4 - To do
-
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png)
-
-
